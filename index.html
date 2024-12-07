@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Encounter Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Topic Encounter Tracker</h1>
+        <div id="tracker">
+            <div class="topic">
+                <button onclick="decrement('sse')">-</button>
+                <button onclick="increment('sse')">+</button>
+                <span>Software System Engineering:</span>
+                <span id="sseCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('pm')">-</button>
+                <button onclick="increment('pm')">+</button>
+                <span>Project Management:</span>
+                <span id="pmCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('sem')">-</button>
+                <button onclick="increment('sem')">+</button>
+                <span>Software Engineering Methods:</span>
+                <span id="semCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('up')">-</button>
+                <button onclick="increment('up')">+</button>
+                <span>Unified Process:</span>
+                <span id="upCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('st')">-</button>
+                <button onclick="increment('st')">+</button>
+                <span>Software Testing:</span>
+                <span id="stCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('agile')">-</button>
+                <button onclick="increment('agile')">+</button>
+                <span>Agile:</span>
+                <span id="agileCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('ds')">-</button>
+                <button onclick="increment('ds')">+</button>
+                <span>Dependable Systems:</span>
+                <span id="dsCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('solid')">-</button>
+                <button onclick="increment('solid')">+</button>
+                <span>SOLID Design Principles:</span>
+                <span id="solidCount">0</span>
+            </div>
+            <div class="topic">
+                <button onclick="decrement('dp')">-</button>
+                <button onclick="increment('dp')">+</button>
+                <span>Design Patterns:</span>
+                <span id="dpCount">0</span>
+            </div>
+        </div>
+        <button id="resetButton" onclick="resetAll()">Reset All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
